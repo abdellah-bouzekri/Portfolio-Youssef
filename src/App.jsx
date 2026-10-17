@@ -10,7 +10,7 @@ import CanvasBackground from "./components/CanvasBackground";
 import ScrollToTop from "./components/ScrollToTop";
 
 // 2. Lazy load all the heavy stuff below the fold
-const Showreel = lazy(() => import("./components/Showreel"));
+const YouTubeReels = lazy(() => import("./components/YouTubeReels"));
 const Workflow = lazy(() => import("./components/Workflow"));
 const Projects = lazy(() => import("./components/Projects"));
 const About = lazy(() => import("./components/About"));
@@ -51,7 +51,7 @@ export default function App() {
           {/* Wrap the rest of the site in Suspense */}
           <Suspense fallback={<div className="min-h-screen" />}>
             <ScrollReveal yOffset={40}>
-              <Showreel />
+              <YouTubeReels />
             </ScrollReveal>
 
             <ScrollReveal yOffset={40}>
